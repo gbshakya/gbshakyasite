@@ -10,7 +10,7 @@ export default async function Home() {
       {/* Hero Section */}
       <section className="text-center space-y-6 mb-16">
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-          Welcome to My Blog
+          Welcome to GB World
         </h1>
         <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
           I write about web development, technology, and creative coding. 
