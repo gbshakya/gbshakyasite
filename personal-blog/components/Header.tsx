@@ -19,7 +19,7 @@ export function Header() {
       <div className="container mx-auto flex h-14 items-center justify-between px-4">
         <div className="flex items-center space-x-8">
           <Link href="/" className="text-xl font-bold">
-            Your Blog
+            GB World
           </Link>
           <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
             {navigation.map((item) => (

@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Your Blog",
+    default: "GB Home",
     template: "%s | Your Blog",
   },
   description: "A modern personal blog built with Next.js and Tailwind CSS",
