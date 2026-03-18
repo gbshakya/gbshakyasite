@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { SchedulerProvider } from "@/components/SchedulerProvider";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -47,9 +48,11 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Header />
-          <main className="flex-1">{children}</main>
-          <Footer />
+          <SchedulerProvider>
+            <Header />
+            <main className="flex-1">{children}</main>
+            <Footer />
+          </SchedulerProvider>
         </ThemeProvider>
       </body>
     </html>
