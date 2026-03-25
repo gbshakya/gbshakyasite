@@ -44,14 +44,7 @@ export default async function Home() {
         {posts.length > 0 ? (
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {posts.map((post) => (
-              <BlogCard 
-              key={post.slug} 
-              title={post.title}
-              description={post.description}
-              date={post.date}
-              slug={post.slug}
-              tags={post.tags}
-            />
+              <BlogCard key={post.slug} post={post} />
             ))}
           </div>
         ) : (
